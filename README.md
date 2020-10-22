@@ -1,4 +1,4 @@
-# universe-explorer
+# Cosmos Attraise
 
 ## Project setup
 ```

@@ -9,7 +9,6 @@ npm install
 ```
 npm run serve
 ```
-https://api.nasa.gov/planetary/apod?hd=true&api_key=DEMO_KEY
 
 ### Compiles and minifies for production
 ```

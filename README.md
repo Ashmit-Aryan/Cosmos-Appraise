@@ -1,4 +1,4 @@
-# Cosmos Attraise
+# Cosmos Appraise
 
 ## Project setup
 ```

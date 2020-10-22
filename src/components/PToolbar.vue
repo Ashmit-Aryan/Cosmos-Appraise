@@ -6,7 +6,7 @@
         <v-layout>
           <div 
             :class="{'display-1 font-weight-bold ': $vuetify.breakpoint.smAndUp,'subtitle font-weight-bold': $vuetify.breakpoint.smAndDown}"
-          >Cosmos Attraise
+          >Cosmos Appraise
           </div>
           <v-spacer></v-spacer>
            <v-btn

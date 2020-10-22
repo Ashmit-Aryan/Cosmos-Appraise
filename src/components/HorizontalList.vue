@@ -47,8 +47,7 @@
             {end: 576, size: 1}, 
             {start: 576, end: 768, size: 2},
             {start: 768, end: 992, size: 3},
-            {size: 4},
-            {size:5}
+            {size: 4}
           ]
         }
       }

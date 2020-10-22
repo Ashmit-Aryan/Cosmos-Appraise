@@ -2,7 +2,7 @@
   <div class="home">
     <PToolBar Name1="Photo Search" Name2="Today's Pic" Name3="7 Day Pics"/>
       <v-container fluid style="margin-top:100px;">
-          <v-img  style="border-radius: 20px;" height="700" class="img_background" src="../assets/iss.jpg"></v-img>
+          <v-img class="img" style="border-radius:20px;" src="../assets/iss.jpg"></v-img>
       </v-container>
        <PDay  :pic="apod"/>
      <HorizontalList id="day" :Apod="allApod" />
@@ -90,3 +90,14 @@ export default {
   }
 }
 </script>
+<style scoped>
+.img{
+  height:700px;
+}
+@media screen and (max-width:800px){
+  .img{
+    height: 300px;
+    padding:20px;
+  }
+}
+</style>

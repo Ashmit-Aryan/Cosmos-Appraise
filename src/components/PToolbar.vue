@@ -1,5 +1,6 @@
 <template>
-  <v-app-bar desne absolute color="black" dark height="100px">
+<div style="width:max-content;" class="main">
+   <v-app-bar desne absolute color="black" dark  height="100px">
     <v-layout justify>
       <v-container>
         <v-layout>
@@ -33,6 +34,7 @@
       </v-container>
     </v-layout>
   </v-app-bar>
+</div>
 </template>
 
 <script>

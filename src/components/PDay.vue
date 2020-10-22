@@ -7,8 +7,8 @@
         </v-flex>
     </v-card-text>
     <v-card-title>
-      <iframe v-if="pic.media_type === 'video'" :src="pic.url"></iframe>
-      <v-img class="img" contain v-else :src="pic.hdurl" ></v-img>
+      <iframe v-if="pic.media_type === 'video'" class="video" :src="pic.url"></iframe>
+      <v-img class="img" v-else :src="pic.url"></v-img>
     </v-card-title>
     <v-card-text>
        <v-flex xs12 mt-5>
@@ -56,7 +56,12 @@ export default {
   font-size:20px; 
 }
 .img{
-  border-radius: 20px;;
+  border-radius: 20px;
+  height:500px;
+}
+.video{
+  width:1000px;
+  height:500px;
 }
 @media screen and (max-width: 760px) {
   .imgCard{
@@ -64,6 +69,11 @@ export default {
   }
   .img{
     height: 100;
+  }
+  .video{
+    width:500px;
+    height: 250px;
+    margin-left:5px;
   }
 }
 </style>

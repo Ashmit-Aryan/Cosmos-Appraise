@@ -38,7 +38,7 @@ export default {
       }
     }
   },
-  computed: mapGetters(['allApod']),
+  computed: mapGetters(['allApod','length']),
   async mounted(){
     const res = await axios.get(`https://api.nasa.gov/planetary/apod?hd=true&date=${new Date().getFullYear()}-${this.getMonth()}-${new Date().getDate()}&api_key=ZVNr0BqSereBHqTrF2YkTXqvXs3EW7UW1NwQl2b1`)
     const data = res.data
@@ -81,14 +81,17 @@ export default {
       return month;
     },
     async get7DayApod(){
-      for (let index = 1; index <=8; index++) {
+      if(this.length == 0){
+        for (let index = 1; index <=8; index++) {
         const res = await axios.get(`https://api.nasa.gov/planetary/apod?hd=true&date=${new Date().getFullYear()}-${this.getMonth()}-${new Date().getDate()-index}&api_key=ZVNr0BqSereBHqTrF2YkTXqvXs3EW7UW1NwQl2b1`);
         const data = res.data
         this.AddApod(data);
       }
+      }
     }
+   }
   }
-}
+
 </script>
 <style scoped>
 .img{

@@ -3,7 +3,8 @@ const state = {
 };
 
 const getters = {
-  allApod: (state) => state.apod
+  allApod: (state) => state.apod,
+  length: (state) => state.apod.length
 };
 
 const actions={
